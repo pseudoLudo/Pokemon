@@ -32,7 +32,7 @@ int main() {
     case 1: cout << "You chose Bulbasaur! A wise choice." << endl;chosen_pokemon = Bulbasaur;break;
     case 2: cout << "You chose Charmander! A fiery choice." << endl;chosen_pokemon = Charmander;break;
     case 3: cout << "You chose Squirtle! A cool choice." << endl;chosen_pokemon = Squirtle;break;
-    default: cout << "Hmm, that doesn't seem right, how about you with my personal favorite, Pikachu!" << endl;chosen_pokemon = InvalidChoice;break;
+    default: cout << "Hmm, that doesn't seem right, how about you with my personal favorite, Charmander!" << endl;chosen_pokemon = Charmander;break;
     }
 
     cout << "" << endl;
