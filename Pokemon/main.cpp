@@ -1,6 +1,16 @@
 #include <iostream>
 using namespace std;
 
+void waitForEnter()
+{
+    cin.get();
+}
+
+void consoleClear()
+{
+    system("clear");
+}
+
 enum class PokemonChoice {
     Charmander,
     Bulbasaur,
@@ -117,6 +127,34 @@ class ProfessorOak
         cout << "Great Start, " << p.player_name << " Professor Oak: You must be eager to start your adventure. But first, you�ll need a Pokemon of your own!" << endl << endl;
     }
 
+    void explainMainQuest(Player p)
+    {
+        consoleClear();
+        cout << "Professor Oak: Oak-ay " << p.player_name << " I am about to explain you about your upcoming grand adventure." << endl;
+        waitForEnter();
+        cout << "Professor Oak: You see, becoming a Pokémon Master is no easy feat. It takes courage, wisdom, and a bit of luck." << endl;
+        cout << "Professor Oak: Your mission, should you choose to accept it (and trust me, you really don’t have a choice) is to collect all the Pokémon Badges and conquer the Pokémon League. " << endl;
+        waitForEnter();
+        cout << p.player_name <<" : Wait... that sounds a lot like every other Pokémon game out there." << endl;
+        waitForEnter();
+        cout << "Professor Oak: Shhh! Don't break the fourth wall " << p.player_name <<  " ! This is serious business." << endl;
+        waitForEnter();
+        cout << "Professor Oak: To achieve this, you’ll need to battle wild Pokémon, challenge gym leaders, and of course, keep your Pokémon healthy at the PokeCenter." << endl;
+        waitForEnter();
+        cout << "Professor Oak: Along the way, you'll capture new Pokémon to strengthen your team. Just remember—there’s a limit to how many Pokémon you can carry, so choose wisely!" << endl;
+        waitForEnter();
+        cout << p.player_name <<" : Sounds like a walk in the park... right?" << endl;
+        waitForEnter();
+        cout << "Professor Oak: Hah! That’s what they all say! But beware, young Trainer, the path to victory is fraught with challenges. And if you lose a battle... well, let’s just say you'll be starting from square one.\n"; 
+        waitForEnter();
+        cout << "\nProfessor Oak: So, what do you say? Are you ready to become the next Pokémon Champion?\n";
+        waitForEnter();
+        cout << "\n" << p.player_name << ": Ready as I’ll ever be, Professor!\n";
+        waitForEnter();
+        cout << "\nProfessor Oak: That’s the spirit! Now, your journey begins...\n";
+        cout << "Professor Oak: But first... let's just pretend I didn't forget to set up the actual game loop... Ahem, onwards!\n";
+        consoleClear();
+    }
     void offerPokemonChoices(Player &p)
     {
         cout << "You can choose one of the following Pok�mon:\n";
@@ -141,40 +179,15 @@ class ProfessorOak
 
 int main() {
 
-    ProfessorOak professor("oak"); 
-    Pokemon defaultPokemon;
     Pokemon charmander("Charmander",PokemonType::Fire,100);
-
-    cout << "Pokemon Details:\n";
-    cout << "Name: " << defaultPokemon.name << "\nType: " << (int)defaultPokemon.type << "\nHealth: " << defaultPokemon.health << "\n";
-    cout << "Name: " << charmander.name << "\nType: " << (int)charmander.type << "\nHealth: " << charmander.health << "\n";
-
-
-    Pokemon bulbasaur("Bulbasaur",PokemonType::Grass,100);
-    Pokemon bulbCopy = bulbasaur;
-
-    cout << "Original Pokemon Health: " << bulbasaur.health << "\n";
-    cout << "Copied Pokemon Health: " << bulbCopy.health << "\n";
-
-    bulbCopy.health = 80;
-    cout << "After Modification:\n";
-    cout << "Original Pokemon Health: " << bulbasaur.health << "\n";
-    cout << "Copied Pokemon Health: " << bulbCopy.health << "\n";
-
-    {
-        Pokemon squirtle("Squirtle", PokemonType::Water, 100); 
-    } 
-
     ProfessorOak professor("Professor Oak");
     Player player("Ash", charmander); 
 
-
     professor.greetPlayer(player);
     professor.offerPokemonChoices(player);
+    professor.explainMainQuest(player);
 
-    cout << "Professor Oak: " << player.p_chosenPokemon.name << " and you, " << player.player_name << ", are going to be the best of friends!\n"; 
-    cout << "Professor Oak: Your journey begins now! Get ready to explore the vast world of Pokemon!\n";
+    cout << "\n[Placeholder for the Game Loop]\n";
 
     return 0;
-
 }
