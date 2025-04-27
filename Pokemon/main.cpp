@@ -1,6 +1,9 @@
 #include <iostream>
 using namespace std;
 
+#include"PokemonType.hpp"
+#include"PokemonChoice.hpp"
+
 void waitForEnter()
 {
     cin.get();
@@ -11,22 +14,7 @@ void consoleClear()
     system("clear");
 }
 
-enum class PokemonChoice {
-    Charmander,
-    Bulbasaur,
-    Squirtle,
-    InvalidChoice
-};
 
-enum class PokemonType
-{
-    Fire,
-    Electric,
-    Water,
-    Earth,
-    Grass,
-    Normal
-};
 
 class Pokemon
 {
@@ -236,4 +224,4 @@ int main() {
     cout << "\n[Placeholder for the Game Loop]\n";
 
     return 0;
-#include "header.hpp"
+}
