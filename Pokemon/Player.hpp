@@ -1,6 +1,3 @@
-#include"PokemonType.hpp"
-#include"PokemonChoice.hpp"
-#include "Utility.hpp"
 #include<string>
 #include<limits>
 #include<iostream>
@@ -17,4 +14,4 @@ class Player
     Player();
     Player(string p_name, Pokemon p_type);
     void choosePokemon(int choice);
-}
+};
