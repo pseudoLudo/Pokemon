@@ -236,4 +236,4 @@ int main() {
     cout << "\n[Placeholder for the Game Loop]\n";
 
     return 0;
-}
+#include "header.hpp"
