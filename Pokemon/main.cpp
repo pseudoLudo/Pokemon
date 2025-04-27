@@ -6,8 +6,8 @@ using namespace std;
 
 #include"PokemonType.hpp"
 #include"PokemonChoice.hpp"
-#include "Utility.hpp"
-
+#include"Utility.hpp"
+#include"Player.hpp"
 
 
 class Pokemon
@@ -54,41 +54,6 @@ public:
     }
 };
 
-class Player
-{
-public:
-    string player_name;
-    Pokemon p_chosenPokemon;
-
-    Player()
-    {
-        player_name = "Trainer";
-        p_chosenPokemon = Pokemon();
-        cout << "a new player named "<<player_name<<"has been created!";
-    }
-
-    Player(string p_name, Pokemon p_type)
-    {
-        player_name = p_name;
-        p_chosenPokemon = p_type;
-        cout << "A new Pokemon named " << p_name << " has been created!\n";
-    }
-
-    void choosePokemon(int choice)
-    {
-        switch (choice)
-        {
-        case 1: p_chosenPokemon =  Pokemon("Charmander", PokemonType::Fire, 100);break;
-        case 2: p_chosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100); 
-        case 3: p_chosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100);break;
-        default: p_chosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100);break;
-        }
-
-        cout << "Player " << player_name << " chose " << p_chosenPokemon.name << "!\n";
-    }
-
-    
-};
 
 class ProfessorOak
 {
