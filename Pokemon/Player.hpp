@@ -1,6 +1,7 @@
 #include<string>
 #include<limits>
 #include<iostream>
+#include "Pokemon.hpp"
 
 using namespace std;
 
