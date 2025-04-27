@@ -7,7 +7,7 @@ using namespace std;
 #include"PokemonType.hpp"
 #include"PokemonChoice.hpp"
 #include"Utility.hpp"
-#include"Player.hpp"
+
 
 
 class Pokemon
@@ -54,6 +54,7 @@ public:
     }
 };
 
+#include"Player.hpp"
 
 class ProfessorOak
 {
