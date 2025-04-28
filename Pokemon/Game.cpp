@@ -4,9 +4,21 @@
 #include "Game.hpp"
 #include "Utility.hpp"
 #include "Player.hpp"
+#include "grass.hpp"
+#include "PokemonType.hpp"
 using namespace std;
 
+Grass forestGrass = {
+    "Forest",
+    {{"Pidgey",PokemonType::Normal,40},{"Caterpie",PokemonType::Bug,35}},
+    70
+};
 
+Grass caveGrass = {
+    "Cave",
+    {{"Zubat", PokemonType::Poison, 30}, {"Geodude", PokemonType::Rock, 50}},
+    80
+};
 Game::Game() {
 
 }
