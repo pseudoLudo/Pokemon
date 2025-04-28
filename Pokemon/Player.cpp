@@ -21,11 +21,11 @@ using namespace std;
 
     void Player::choosePokemon(int choice)
     {
-        switch (choice)
+        switch ((PokemonChoice)choice)
         {
-        case 1: p_chosenPokemon =  Pokemon("Charmander", PokemonType::Fire, 100);break;
-        case 2: p_chosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100); 
-        case 3: p_chosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100);break;
+        case PokemonChoice::Charmander: p_chosenPokemon =  Pokemon("Charmander", PokemonType::Fire, 100);break;
+        case PokemonChoice::Bulbasaur: p_chosenPokemon = Pokemon("Bulbasaur", PokemonType::Grass, 100); 
+        case PokemonChoice::Squirtle: p_chosenPokemon = Pokemon("Squirtle", PokemonType::Water, 100);break;
         default: p_chosenPokemon = Pokemon("Pikachu", PokemonType::Electric, 100);break;
         }
 
