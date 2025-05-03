@@ -33,7 +33,23 @@ using namespace std;
     }
 
 //methods
-    void Pokemon::attack()
+    void Pokemon::attack(Pokemon& target)
     {
-        cout << name << "attacks with a powerful move!\n";
+        int damage = 10;
+        cout << name << " attacks " << target.name << " for " << damage << " damage!\\n";
+        target.TakeDamage(damage);
+    }
+
+    void Pokemon::TakeDamage(int dmg)
+    {
+        health -= dmg;
+        if (health < 0)
+        {
+            health = 0;
+        }
+    }
+
+    bool Pokemon::isFainted() const
+    {
+        return health <= 0;
     }

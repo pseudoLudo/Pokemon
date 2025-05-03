@@ -12,13 +12,16 @@ public:
     string name;
     PokemonType type;
     int health;
-    
+    int maxHealth;
+
     Pokemon();
     Pokemon(string p_name, PokemonType p_type, int p_health);
     Pokemon(const Pokemon &other);
     ~Pokemon();
     
-    void attack();
+    void attack(Pokemon& target);
+    void TakeDamage(int dmg);
+    bool isFainted() const;
     
 };
 

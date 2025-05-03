@@ -19,6 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\BattleManager.cpp" />
     <ClCompile Include="..\..\Game.cpp" />
     <ClCompile Include="..\..\main.cpp" />
     <ClCompile Include="..\..\Player.cpp" />
