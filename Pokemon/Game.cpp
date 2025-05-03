@@ -6,31 +6,24 @@
 #include "Player.hpp"
 #include "grass.hpp"
 #include "PokemonType.hpp"
+#include "WildEncounterManager.hpp"
+
 using namespace std;
 
-Grass forestGrass = {
-    "Forest",
-    {{"Pidgey",PokemonType::Normal,40},{"Caterpie",PokemonType::Bug,35}},
-    70
-};
 
-Grass caveGrass = {
-    "Cave",
-    {{"Zubat", PokemonType::Poison, 30}, {"Geodude", PokemonType::Rock, 50}},
-    80
-};
 Game::Game() {
-
-}
+    forestGrass = {"Forest", {{"Pidgey", PokemonType::Normal, 40}, {"Caterpie", PokemonType::Bug, 35}}, 70};
+};
 
 void Game::gameLoop (Player &p)
 {
     bool keepPlaying  = true;
     int choice;
+    Utility::consoleClear();
 
     while (keepPlaying)
     {
-        Utility::consoleClear();
+        
         cout << "What would you like to do next " << p.player_name << " ?" <<endl;
         cout << "1.Battle Wild Pokémon" << endl;
         cout << "2.Visit PokeCenter" << endl;
@@ -40,10 +33,18 @@ void Game::gameLoop (Player &p)
 
         cin>>choice;
 
+        Utility::clearInputBuffer();
+
         switch (choice)
         {
         case 1:
-        cout << "You look around... but all the wild Pokémon are on vacation. Maybe try again later?\n";break;
+        {
+            WildEncounterManager encounterManager;
+            Pokemon encounteredPokemon = encounterManager.getRandomPokemonFromGrass(forestGrass);
+            cout << "A wild " << encounteredPokemon.name << " appeared!\n";
+            break;
+        }
+
         case 2:
         cout << "You head to the PokeCenter, but Nurse Joy is out on a coffee break. Guess your Pokemon will have to tough it out for now!\n";break;
         case 3:
@@ -53,6 +54,7 @@ void Game::gameLoop (Player &p)
         case 5:
         cout << "You try to quit, but Professor Oak's voice echoes: 'There's no quitting in Pokemon training!\n";
         cout << "Are you sure you want to quit? (y/n): "<< endl;
+
         char quitChoice;
         cin >> quitChoice;
         if (quitChoice == 'y' || quitChoice == 'Y') {

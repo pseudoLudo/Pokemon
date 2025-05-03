@@ -11,7 +11,7 @@ void Utility ::waitForEnter()
 
 void Utility ::consoleClear()
 {
-    system("clear");
+    system("cls");
 }
 
 void Utility :: clearInputBuffer() {

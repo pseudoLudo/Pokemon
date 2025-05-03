@@ -1,3 +1,4 @@
+#pragma once
 #include<string>
 #include<iostream>
 
@@ -11,6 +12,6 @@ class ProfessorOak
 
     ProfessorOak(string prof_name);
     void greetPlayer(Player &p);
-    void explainMainQuest(Player p);
+    void explainMainQuest(Player &p);
     void offerPokemonChoices(Player &p);
 };

@@ -1,8 +1,10 @@
+#pragma once
 #include<string>
-#include<vector>
-using namespace std;
+#include<vector> 
+#include"Pokemon.hpp"
 
-class Pokemon;
+
+using namespace std;
 
 struct Grass
 {

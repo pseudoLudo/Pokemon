@@ -1,6 +1,10 @@
+// #pragma once
+#ifndef POKEMON_HPP
+#define POKEMON_HPP
 #include <string>
 using namespace std;
 enum class PokemonType;             
+
 
 class Pokemon
 {
@@ -17,3 +21,5 @@ public:
     void attack();
     
 };
+
+#endif

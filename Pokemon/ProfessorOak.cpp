@@ -3,6 +3,8 @@
     #include "ProfessorOak.hpp"
     #include "Player.hpp"
     #include "Utility.hpp"
+
+    using namespace std;
     
     ProfessorOak::ProfessorOak(string prof_name)
     {
@@ -18,7 +20,7 @@
         cout << "Great Start, " << p.player_name << " Professor Oak: You must be eager to start your adventure. But first, you�ll need a Pokemon of your own!" << endl << endl;
     }
 
-    void ProfessorOak::explainMainQuest(Player p)
+    void ProfessorOak::explainMainQuest(Player &p)
     {
         Utility::consoleClear();
         cout << "Professor Oak: Oak-ay " << p.player_name << " I am about to explain you about your upcoming grand adventure." << endl;
