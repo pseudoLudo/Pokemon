@@ -11,11 +11,12 @@ using namespace std;
         cout << "A new Pokemon has been created with the default constructor!\n";
     }
 
-    Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health)
+    Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health,int p_attack)
     {
         name = p_name;
         type = p_type;
         health = p_health;
+        attackPower = p_attack;
         cout << "A new Pokemon named " << name << " has been created!\n";
     }
 
@@ -24,6 +25,7 @@ using namespace std;
         name = other.name;
         type = other.type;
         health = other.health;
+        attackPower = other.attackPower;
         cout << "A new Pokemon has been copied from " << other.name << "!\n";
     }
 
@@ -35,7 +37,7 @@ using namespace std;
 //methods
     void Pokemon::attack(Pokemon& target)
     {
-        int damage = 10;
+        int damage = target.attackPower;
         cout << name << " attacks " << target.name << " for " << damage << " damage!\\n";
         target.TakeDamage(damage);
     }
@@ -52,4 +54,9 @@ using namespace std;
     bool Pokemon::isFainted() const
     {
         return health <= 0;
+    }
+
+    void Pokemon::heal()
+    {
+        health = maxHealth;
     }
