@@ -1,5 +1,5 @@
-﻿  main.cpp
+﻿  BattleManager.cpp
+  Game.cpp
   Player.cpp
-  Pokemon.cpp
   Generating Code...
   pokemon3.vcxproj -> C:\Users\ruthv\Documents\GitHub\Pokemon\Pokemon\pokemon3\x64\Debug\pokemon3.exe
