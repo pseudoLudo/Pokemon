@@ -1,0 +1,23 @@
+#pragma once
+#include<string>
+#include<limits>
+#include<iostream>
+#include"../../include/Pokemon/Pokemon.hpp"
+
+using namespace std;
+
+namespace N_Player
+{
+
+    class Player
+    {
+    public:
+        string player_name;
+        Pokemon p_chosenPokemon;
+
+        Player();
+        Player(string p_name, Pokemon p_type);
+        void choosePokemon(int choice);
+    };
+
+}

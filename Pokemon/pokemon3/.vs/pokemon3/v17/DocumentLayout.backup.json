@@ -1,0 +1,68 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\pokemon3\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5EC198E9-BE08-4176-9B61-DB98DFC98935}|pokemon3\\pokemon3.vcxproj|C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleManager.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EC198E9-BE08-4176-9B61-DB98DFC98935}|pokemon3\\pokemon3.vcxproj|C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleManager.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5EC198E9-BE08-4176-9B61-DB98DFC98935}|pokemon3\\pokemon3.vcxproj|C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleState.hpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BattleState.hpp",
+              "DocumentMoniker": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleState.hpp",
+              "RelativeDocumentMoniker": "..\\BattleState.hpp",
+              "ToolTip": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleState.hpp",
+              "RelativeToolTip": "..\\BattleState.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-05T18:07:28.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BattleManager.hpp",
+              "DocumentMoniker": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleManager.hpp",
+              "RelativeDocumentMoniker": "..\\BattleManager.hpp",
+              "ToolTip": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleManager.hpp",
+              "RelativeToolTip": "..\\BattleManager.hpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-05T07:18:24.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BattleManager.cpp",
+              "DocumentMoniker": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleManager.cpp",
+              "RelativeDocumentMoniker": "..\\BattleManager.cpp",
+              "ToolTip": "C:\\Users\\ruthv\\Documents\\GitHub\\Pokemon\\Pokemon\\BattleManager.cpp",
+              "RelativeToolTip": "..\\BattleManager.cpp",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-03T10:57:43.441Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
