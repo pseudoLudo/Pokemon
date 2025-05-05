@@ -5,12 +5,16 @@ using namespace std;
 #include "../../include/Character/Player/Player.hpp"
 #include "../../include/Battle/BattleState.hpp"
 
-class BattleManager
+namespace N_Battle
 {
-public:
-    void startBattle(Player& player, Pokemon& wildPokemon);
-    BattleState battleState;
-    void battle(Pokemon& playerPokemon, Pokemon& wildPokemon);
-    void handleBattleOutcome();
-    void updateBattleState();
-};
+
+    class BattleManager
+    {
+    public:
+        void startBattle(Player& player, Pokemon& wildPokemon);
+        BattleState battleState;
+        void battle(Pokemon& playerPokemon, Pokemon& wildPokemon);
+        void handleBattleOutcome();
+        void updateBattleState();
+    };
+}

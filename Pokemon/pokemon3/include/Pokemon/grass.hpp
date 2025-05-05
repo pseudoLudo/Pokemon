@@ -6,9 +6,12 @@
 
 using namespace std;
 
-struct Grass
+namespace N_Pokemon
 {
-    string environmentType;
-    vector<Pokemon> wildPokemonList;
-    int encounterRate;
-};
+    struct Grass
+    {
+        string environmentType;
+        vector<Pokemon> wildPokemonList;
+        int encounterRate;
+    };
+}

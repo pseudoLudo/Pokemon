@@ -4,13 +4,14 @@
     "\\Pokemon",
     "\\Pokemon\\pokemon3",
     "\\Pokemon\\pokemon3\\include",
+    "\\Pokemon\\pokemon3\\include\\Battle",
+    "\\Pokemon\\pokemon3\\include\\Character",
+    "\\Pokemon\\pokemon3\\include\\Character\\Player",
+    "\\Pokemon\\pokemon3\\include\\Main",
+    "\\Pokemon\\pokemon3\\include\\Pokemon",
     "\\Pokemon\\pokemon3\\src",
-    "\\Pokemon\\pokemon3\\src\\Battle",
-    "\\Pokemon\\pokemon3\\src\\Character",
-    "\\Pokemon\\pokemon3\\src\\Character\\Player",
-    "\\Pokemon\\pokemon3\\src\\Main",
-    "\\Pokemon\\pokemon3\\src\\Utility"
+    "\\Pokemon\\pokemon3\\src\\Pokemon"
   ],
-  "SelectedNode": "\\Pokemon\\pokemon3\\main.cpp",
+  "SelectedNode": "\\Pokemon\\pokemon3\\src\\Battle\\BattleManager.cpp",
   "PreviewInSolutionExplorer": false
 }

@@ -6,14 +6,18 @@
 
 using namespace std;
 
-
-class Player
+namespace N_Player
 {
-    public:
-    string player_name;
-    Pokemon p_chosenPokemon;
 
-    Player();
-    Player(string p_name, Pokemon p_type);
-    void choosePokemon(int choice);
-};
+    class Player
+    {
+    public:
+        string player_name;
+        Pokemon p_chosenPokemon;
+
+        Player();
+        Player(string p_name, Pokemon p_type);
+        void choosePokemon(int choice);
+    };
+
+}

@@ -3,6 +3,9 @@
 #include"../../include/Pokemon/PokemonType.hpp"
 using namespace std;
 
+namespace N_Pokemon
+{
+
     Pokemon::Pokemon()
     {
         name = "Unknown";
@@ -11,7 +14,7 @@ using namespace std;
         cout << "A new Pokemon has been created with the default constructor!\n";
     }
 
-    Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health,int p_attack)
+    Pokemon::Pokemon(string p_name, PokemonType p_type, int p_health, int p_attack)
     {
         name = p_name;
         type = p_type;
@@ -20,7 +23,7 @@ using namespace std;
         cout << "A new Pokemon named " << name << " has been created!\n";
     }
 
-    Pokemon::Pokemon(const Pokemon &other)
+    Pokemon::Pokemon(const Pokemon& other)
     {
         name = other.name;
         type = other.type;
@@ -34,7 +37,7 @@ using namespace std;
         cout << name << " has been released.\n";
     }
 
-//methods
+    //methods
     void Pokemon::attack(Pokemon& target)
     {
         int damage = target.attackPower;
@@ -60,3 +63,4 @@ using namespace std;
     {
         health = maxHealth;
     }
+}

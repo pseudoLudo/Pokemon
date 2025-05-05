@@ -5,16 +5,18 @@
 #include <string>
 #include "../../include/Pokemon/grass.hpp"
 
-
-WildEncounterManager::WildEncounterManager()
+namespace N_Battle
 {
-    srand(time(0)); 
-}
+    WildEncounterManager::WildEncounterManager()
+    {
+        srand(time(0));
+    }
 
-//const Pokemon& WildEncounterManager::getRandomPokemonFromGrass(const Grass &grass) 
-Pokemon WildEncounterManager::getRandomPokemonFromGrass(const Grass& grass)
-{
-    int randomIndex = rand() % grass.wildPokemonList.size();
-    Pokemon WildPokemon = grass.wildPokemonList[randomIndex];
-    return WildPokemon;
+    //const Pokemon& WildEncounterManager::getRandomPokemonFromGrass(const Grass &grass) 
+    Pokemon WildEncounterManager::getRandomPokemonFromGrass(const Grass& grass)
+    {
+        int randomIndex = rand() % grass.wildPokemonList.size();
+        Pokemon WildPokemon = grass.wildPokemonList[randomIndex];
+        return WildPokemon;
+    }
 }

@@ -4,14 +4,17 @@
 
 using namespace std;
 
-class Player;
-class ProfessorOak
+namespace N_Character
 {
+    class Player;
+    class ProfessorOak
+    {
     public:
-    string name;
+        string name;
 
-    ProfessorOak(string prof_name);
-    void greetPlayer(Player &p);
-    void explainMainQuest(Player &p);
-    void offerPokemonChoices(Player &p);
-};
+        ProfessorOak(string prof_name);
+        void greetPlayer(Player& p);
+        void explainMainQuest(Player& p);
+        void offerPokemonChoices(Player& p);
+    };
+}
